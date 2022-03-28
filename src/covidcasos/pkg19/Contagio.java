@@ -250,9 +250,9 @@ public class Contagio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAgregar;
-    private javax.swing.JButton btnConsultar;
-    private javax.swing.JButton btnNuevo;
+    public javax.swing.JButton btnAgregar;
+    public javax.swing.JButton btnConsultar;
+    public javax.swing.JButton btnNuevo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -261,8 +261,8 @@ public class Contagio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     public static javax.swing.JTable tblDatosContagio;
-    private javax.swing.JTextField txtFechaDiagnostico;
-    private javax.swing.JTextField txtMatricula;
-    private javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtFechaDiagnostico;
+    public javax.swing.JTextField txtMatricula;
+    public javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }
