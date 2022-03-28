@@ -5,6 +5,7 @@
 package covidcasos.pkg19;
 
 import Controladores.ControladorAlumnos;
+import Controladores.ControladorContagios;
 import Modelo.MDB;
 
 /**
@@ -12,7 +13,7 @@ import Modelo.MDB;
  * @author DELL
  */
 public class FrmCasosCovid extends javax.swing.JFrame {
-
+    MDB objModelo = new MDB();
     /**
      * Creates new form FrmCasosCovid
      */
@@ -140,7 +141,7 @@ public class FrmCasosCovid extends javax.swing.JFrame {
 
     private void btnRegistroAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroAlumnosActionPerformed
         this.setVisible(false);
-        MDB objModelo = new MDB();
+        
         FrmAlumno objAlumno = new FrmAlumno();
         ControladorAlumnos objControllerAlumnos;
         
@@ -151,8 +152,13 @@ public class FrmCasosCovid extends javax.swing.JFrame {
 
     private void btnContagiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContagiosActionPerformed
         this.setVisible(false);
-        Contagio c = new Contagio ();
-        c.setVisible(true);
+        Contagio objContagio = new Contagio();
+        ControladorContagios objControllerContagios;
+        
+        objControllerContagios = new ControladorContagios(objContagio, objModelo);
+        objControllerContagios.iniciar();
+        objContagio.setVisible(true);
+        
     }//GEN-LAST:event_btnContagiosActionPerformed
 
     /**
