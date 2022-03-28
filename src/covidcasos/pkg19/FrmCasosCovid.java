@@ -4,6 +4,9 @@
  */
 package covidcasos.pkg19;
 
+import Controladores.ControladorAlumnos;
+import Modelo.MDB;
+
 /**
  *
  * @author DELL
@@ -137,8 +140,13 @@ public class FrmCasosCovid extends javax.swing.JFrame {
 
     private void btnRegistroAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroAlumnosActionPerformed
         this.setVisible(false);
-        FrmAlumno c = new FrmAlumno ();
-        c.setVisible(true);
+        MDB objModelo = new MDB();
+        FrmAlumno objAlumno = new FrmAlumno();
+        ControladorAlumnos objControllerAlumnos;
+        
+        objControllerAlumnos = new ControladorAlumnos(objAlumno, objModelo);
+        objControllerAlumnos.iniciar();
+        objAlumno.setVisible(true);
     }//GEN-LAST:event_btnRegistroAlumnosActionPerformed
 
     private void btnContagiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContagiosActionPerformed

@@ -134,7 +134,7 @@ public class FrmAlumno extends javax.swing.JFrame {
 
         cbxVacuna.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Si", "No" }));
 
-        txtFechaVacunacion.setText("00/00/0000");
+        txtFechaVacunacion.setText("0000/00/00");
         txtFechaVacunacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFechaVacunacionActionPerformed(evt);
@@ -143,7 +143,12 @@ public class FrmAlumno extends javax.swing.JFrame {
 
         cbxCovid.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Si", "No" }));
 
-        txtFechaCovid.setText("00/00/0000");
+        txtFechaCovid.setText("0000/00/00");
+        txtFechaCovid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaCovidActionPerformed(evt);
+            }
+        });
 
         cbxSintomas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Si", "No" }));
         cbxSintomas.addActionListener(new java.awt.event.ActionListener() {
@@ -157,6 +162,11 @@ public class FrmAlumno extends javax.swing.JFrame {
         cbxCarrera.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ingenieria en Software ", "Biomedica ", "Terapia Fisica" }));
 
         btnRegistrar.setText("Registrar");
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarActionPerformed(evt);
+            }
+        });
 
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -328,6 +338,14 @@ public class FrmAlumno extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnLimpiarActionPerformed
 
+    private void txtFechaCovidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaCovidActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaCovidActionPerformed
+
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistrarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -365,14 +383,14 @@ public class FrmAlumno extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLimpiar;
-    private javax.swing.JButton btnRegistrar;
+    public javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnRegistrar;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JComboBox<String> cbxCarrera;
-    private javax.swing.JComboBox<String> cbxCovid;
-    private javax.swing.JComboBox<String> cbxCuatrimestre;
-    private javax.swing.JComboBox<String> cbxSintomas;
-    private javax.swing.JComboBox<String> cbxVacuna;
+    public javax.swing.JComboBox<String> cbxCarrera;
+    public javax.swing.JComboBox<String> cbxCovid;
+    public javax.swing.JComboBox<String> cbxCuatrimestre;
+    public javax.swing.JComboBox<String> cbxSintomas;
+    public javax.swing.JComboBox<String> cbxVacuna;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -391,10 +409,10 @@ public class FrmAlumno extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField txtFechaCovid;
-    private javax.swing.JTextField txtFechaVacunacion;
-    private javax.swing.JTextField txtMatricula;
-    private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtTutor;
+    public javax.swing.JTextField txtFechaCovid;
+    public javax.swing.JTextField txtFechaVacunacion;
+    public javax.swing.JTextField txtMatricula;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtTutor;
     // End of variables declaration//GEN-END:variables
 }
